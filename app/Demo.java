@@ -1,3 +1,8 @@
+package app;
+import factories.GUIFactory;
+import factories.MacOSFactory;
+import factories.WindowsFactory;
+
 public class Demo {
 
     private static Application configureApplication() {

@@ -1,3 +1,9 @@
+package factories;
+import buttons.Button;
+import buttons.MacOSButton;
+import checkboxes.Checkbox;
+import checkboxes.MacOSCheckbox;
+
 public class MacOSFactory implements GUIFactory {
 
     @Override

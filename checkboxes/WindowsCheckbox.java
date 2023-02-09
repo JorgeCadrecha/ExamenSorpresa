@@ -1,3 +1,4 @@
+package checkboxes;
 public class WindowsCheckbox implements Checkbox {
 
     @Override

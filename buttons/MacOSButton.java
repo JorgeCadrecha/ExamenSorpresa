@@ -1,3 +1,4 @@
+package buttons;
 public class MacOSButton implements Button {
 
     @Override

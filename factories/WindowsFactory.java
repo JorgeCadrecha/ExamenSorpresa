@@ -1,3 +1,9 @@
+package factories;
+import buttons.Button;
+import buttons.WindowsButton;
+import checkboxes.Checkbox;
+import checkboxes.WindowsCheckbox;
+
 public class WindowsFactory implements GUIFactory {
 
     @Override

@@ -1,3 +1,4 @@
+package checkboxes;
 public class MacOSCheckbox implements Checkbox {
 
     @Override
