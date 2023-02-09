@@ -11,3 +11,44 @@ class Cliente{}
 Cliente <|-- DialogoWindows
 Cliente <|-- DialogoMac
 @enduml
+
+//------------------
+@startuml
+
+class Demo{}
+
+package app <<Folder>> {
+ class Apllication
+}
+package buttons <<Folder>> {
+ class Button
+ class MacOSButton
+ class WindowsButton
+ 
+ Button <|-- MacOSButton
+ Button <|-- WindowsButton
+ 
+}
+package checkboxes <<Folder>> {
+class Checkbox 
+class MacOSCheackbox
+class WindowsCheackbox
+
+Checkbox <|-- MacOSCheackbox
+Checkbox <|-- WindowsCheackbox
+}
+package factories <<Folder>> {
+ class GUIFactory
+ class MacOSFactory
+ class WindowsFactory
+
+GUIFactory <|-- MacOSFactory
+GUIFactory <|-- WindowsFactory
+
+}
+
+app <|-- checkboxes 
+checkboxes <|-- buttons
+Demo <|--- app
+
+@enduml
